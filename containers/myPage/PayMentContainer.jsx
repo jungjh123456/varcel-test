@@ -39,7 +39,7 @@ const PayMentContainer = () => {
       <div className="container">
         <h2>결제 내역</h2>
         <div className="applied_wrap">
-          {paymentList?.map((item) => {
+          {paymentList?.map((item, i) => {
             return (
               <div key={i} data-program={item.type === "체험권" ? "presession" : "session"} onClick={goInfo} data-id={item.id} data-status={item.status} className="card1">
                 <div data-program={item.type === "체험권" ? "presession" : "session"} data-id={item.id} data-status={item.status}>

@@ -44,7 +44,7 @@ const StudyManagementContainer = () => {
       <div className="container">
         <h2>수업 관리 및 알림노트</h2>
         <div className="study_wrap">
-          {realClassStudyManageMentList?.map((item) => {
+          {realClassStudyManageMentList?.map((item, i) => {
             return (
               <div key={i} onClick={goInfo} data-program="realClass" data-status={item.status} data-id={item.id} className="card">
                 <div data-status={item.status} data-program="realClass" data-id={item.id}>
@@ -79,7 +79,7 @@ const StudyManagementContainer = () => {
               </div>
             );
           })}
-          {studyManageMentList?.map((item) => {
+          {studyManageMentList?.map((item, i) => {
             return (
               <div key={i} data-program="classDetail" onClick={goInfo} data-status={item.status} data-id={item.id} className="card">
                 <div data-program="classDetail" data-status={item.status} data-id={item.id}>

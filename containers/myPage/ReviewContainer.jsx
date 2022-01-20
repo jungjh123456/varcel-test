@@ -45,7 +45,7 @@ const ReviewContainer = () => {
       <div className="container">
         <h2>후기 관리</h2>
         <div className="study_wrap">
-          {reviewList?.sessionbatch_list?.map((item) => {
+          {reviewList?.sessionbatch_list?.map((item, i) => {
             return (
               <div key={i} data-program="sessions" onClick={goInfo} data-status={item.content ? true : false} data-id={item.id} className="card">
                 <div data-program="sessions" data-status={item.content ? true : false} data-id={item.id}>
@@ -70,7 +70,7 @@ const ReviewContainer = () => {
               </div>
             );
           })}
-          {reviewList?.presession_list?.map((item) => {
+          {reviewList?.presession_list?.map((item, i) => {
             return (
               <div key={i} data-program="presessions" onClick={goInfo} data-status={item.content ? true : false} data-id={item.id} className="card">
                 <div data-program="presessions" data-status={item.content ? true : false} data-id={item.id}>

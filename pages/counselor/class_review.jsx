@@ -2,11 +2,7 @@ import React from "react";
 import ClassReviewContainer from "../../components/counselor/ClassReviewContainer";
 
 const class_review = () => {
-  return (
-    <div>
-      <ClassReviewContainer />
-    </div>
-  );
+  return <ClassReviewContainer />;
 };
 
 export default class_review;

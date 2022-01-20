@@ -44,7 +44,7 @@ const AppliedContainer = () => {
       <div className="container">
         <h2>신청서 내역</h2>
         <div className="applied_wrap">
-          {[{ id: 90, product: "아동 발달치료 프로그램", updated_at: new Date(), step: "/application/8?pagesection=presession", application_status: "작성중" }]?.map((item) => {
+          {[{ id: 90, product: "아동 발달치료 프로그램", updated_at: new Date(), step: "/application/8?pagesection=presession", application_status: "작성중" }]?.map((item, i) => {
             return (
               <div key={i} onClick={goAppliedBtn} data-status={item.application_status} data-url={item.step} data-id={item.id} style={{ cursor: "pointer" }} className="card1">
                 <div data-status={item.application_status} data-url={item.step} data-id={item.id}>
@@ -62,7 +62,7 @@ const AppliedContainer = () => {
               </div>
             );
           })}
-          {appliedList?.map((item) => {
+          {appliedList?.map((item, i) => {
             return (
               <div key={i} onClick={goAppliedBtn} data-status={item.application_status} data-url={item.step} data-id={item.id} style={{ cursor: "pointer" }} className="card1">
                 <div data-status={item.application_status} data-url={item.step} data-id={item.id}>

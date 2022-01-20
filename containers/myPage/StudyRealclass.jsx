@@ -98,7 +98,7 @@ const StudyRealclass = () => {
             </div>
             <div className="study_log">
               {/* results */}
-              {studyinfo?.sessionbatch_data?.results?.map((item) => {
+              {studyinfo?.sessionbatch_data?.results?.map((item, i) => {
                 return (
                   <div key={i} data-id={item.id} data-status={item.status} onClick={infoGoBtn} className="card">
                     <div data-id={item.id} data-status={item.status}>

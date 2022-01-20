@@ -120,7 +120,7 @@ const DetailInfo = () => {
                 </div>
                 <div>
                   <span>치료 기관명</span>
-                  {profileInfo?.diagnosis_history?.treated_location_list?.map((item) => {
+                  {profileInfo?.diagnosis_history?.treated_location_list?.map((item, i) => {
                     return <span key={item}>{item}</span>;
                   })}
                 </div>
@@ -189,7 +189,7 @@ const DetailInfo = () => {
           </h2>
           <div>
             <div className="visit_list-wrap">
-              {profileInfo?.expectations?.map((item) => {
+              {profileInfo?.expectations?.map((item, i) => {
                 return (
                   <div key={i} className="visit_list">
                     <CheckIcons />

@@ -76,7 +76,7 @@ const ComunitySection2 = () => {
           {menuState === "baldal" && (
             <>
               {" "}
-              {list.map((item) => {
+              {list.map((item, i) => {
                 return (
                   <div key={i} onClick={goInfoCard} data-id={item.id} data-program="baldal" className="card">
                     <div data-id={item.id} data-program="baldal" className="img-wrap">
@@ -100,7 +100,7 @@ const ComunitySection2 = () => {
           {menuState === "review" && (
             <>
               {" "}
-              {list.map((item) => {
+              {list.map((item, i) => {
                 return (
                   <div key={i} onClick={goInfoCard} data-id={item.id} data-program="review" className="card">
                     <div data-id={item.id} data-program="review" className="img-wrap">
@@ -124,7 +124,7 @@ const ComunitySection2 = () => {
           {menuState === "interview" && (
             <>
               {" "}
-              {list.map((item) => {
+              {list.map((item, i) => {
                 return (
                   <div key={i} onClick={goInfoCard} data-id={item.id} data-program="interview" className="card">
                     <div data-id={item.id} data-program="interview" className="img-wrap">
@@ -148,7 +148,7 @@ const ComunitySection2 = () => {
           {menuState === "etc" && (
             <>
               {" "}
-              {list.map((item) => {
+              {list.map((item, i) => {
                 return (
                   <div key={i} onClick={goInfoCard} data-id={item.id} data-program="etc" className="card">
                     <div data-id={item.id} data-program="etc" className="img-wrap">

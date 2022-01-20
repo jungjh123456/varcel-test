@@ -41,7 +41,7 @@ const StudyCheckChaumInfo = () => {
       setImgName([]);
       setMultiFile([]);
     }
-    [...e.target.files].forEach((item) => {
+    [...e.target.files].forEach((item, i) => {
       setMultiFile((state) => [...state, item]);
     });
   };

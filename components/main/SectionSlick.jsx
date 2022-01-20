@@ -94,7 +94,7 @@ const SectionSlick = () => {
         slidesPerView={1}
         pagination={true}
       >
-        {[1, 2, 3].map((item) => {
+        {[1, 2, 3].map((item, i) => {
           return (
             <SwiperSlide key={i}>
               <div>
