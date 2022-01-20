@@ -43,7 +43,7 @@ const StudyDate = () => {
     }
   }, [userAppliedInfo?.id]);
   useEffect(() => {
-    if (param.query.children) {
+    if (param.query?.children) {
       if (success) {
         const twinId = param.query.user_id;
         const id = param.query.first_id;
@@ -53,7 +53,7 @@ const StudyDate = () => {
     }
   }, [param.query, success]);
   useEffect(() => {
-    if (param.query.children) {
+    if (param.query?.children) {
       if (synState) {
         const result = {};
         dispatch(postPayment({ token, result }));
@@ -62,7 +62,7 @@ const StudyDate = () => {
     }
   }, [param.query, success]);
   useEffect(() => {
-    if (!param.query.children) {
+    if (!param.query?.children) {
       if (success) {
         const result = {};
         dispatch(postPayment({ token, result }));
@@ -83,7 +83,7 @@ const StudyDate = () => {
   }, [param.query.children, payinfo]);
   useEffect(() => {
     if (!param.query.children) {
-      if (payinfo.id) {
+      if (payinfo?.id) {
         param.push(
           `/application/8?user_id=${param.query.user_id}&pagesection=presession&Classtype=${"체험수업권"}&program=${"영유아 발달자극 프로그램"}&sub_program=${"언어 발달자극 프로그램"}&payment_id=${3}`
         );

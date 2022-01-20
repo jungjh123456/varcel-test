@@ -113,7 +113,11 @@ const LocationSection = () => {
                 <span style={!colorState ? {} : item.address.indexOf(searchText) !== -1 ? { color: "#6100ff" } : {}}>{item.address}</span>
                 <div>
                   {item.address_detail.map((item) => {
-                    return <span style={!colorState ? {} : item.indexOf(searchText) !== -1 ? { color: "#6100ff" } : {}}>{item}, </span>;
+                    return (
+                      <span key={i} style={!colorState ? {} : item.indexOf(searchText) !== -1 ? { color: "#6100ff" } : {}}>
+                        {item},{" "}
+                      </span>
+                    );
                   })}
                 </div>
               </div>

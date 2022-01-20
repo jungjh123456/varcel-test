@@ -46,7 +46,7 @@ const AppliedContainer = () => {
         <div className="applied_wrap">
           {[{ id: 90, product: "아동 발달치료 프로그램", updated_at: new Date(), step: "/application/8?pagesection=presession", application_status: "작성중" }]?.map((item) => {
             return (
-              <div onClick={goAppliedBtn} data-status={item.application_status} data-url={item.step} data-id={item.id} style={{ cursor: "pointer" }} className="card1">
+              <div key={i} onClick={goAppliedBtn} data-status={item.application_status} data-url={item.step} data-id={item.id} style={{ cursor: "pointer" }} className="card1">
                 <div data-status={item.application_status} data-url={item.step} data-id={item.id}>
                   <span data-status={item.application_status} data-url={item.step} data-id={item.id}>
                     {item?.product}
@@ -64,7 +64,7 @@ const AppliedContainer = () => {
           })}
           {appliedList?.map((item) => {
             return (
-              <div onClick={goAppliedBtn} data-status={item.application_status} data-url={item.step} data-id={item.id} style={{ cursor: "pointer" }} className="card1">
+              <div key={i} onClick={goAppliedBtn} data-status={item.application_status} data-url={item.step} data-id={item.id} style={{ cursor: "pointer" }} className="card1">
                 <div data-status={item.application_status} data-url={item.step} data-id={item.id}>
                   <span data-status={item.application_status} data-url={item.step} data-id={item.id}>
                     {item?.product}

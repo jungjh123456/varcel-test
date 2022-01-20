@@ -99,7 +99,6 @@ export const ProgressWrap = styled.div`
           content: "";
           transition: width 1s;
           animation: ${progressAni} 500ms 0s ease-in forwards;
-          /* width: ${`${props.percent}%`} !important; */
         }
       }
     `}
@@ -112,7 +111,6 @@ export const ProgressWrap = styled.div`
           content: "";
           transition: width 1s;
           animation: ${progress1Ani} 500ms 0s ease-in forwards;
-          /* width: ${`${props.percent}%`} !important; */
         }
       }
     `}
@@ -125,7 +123,6 @@ export const ProgressWrap = styled.div`
           content: "";
           transition: width 1s;
           animation: ${progressAni1} 500ms 0s ease-in forwards;
-          /* width: ${`${props.percent}%`} !important; */
         }
       }
     `}
@@ -138,7 +135,6 @@ export const ProgressWrap = styled.div`
           content: "";
           transition: width 1s;
           animation: ${progressAni2} 500ms 0s ease-in forwards;
-          /* width: ${`${props.percent}%`} !important; */
         }
       }
     `}
@@ -151,7 +147,6 @@ export const ProgressWrap = styled.div`
           content: "";
           transition: width 1s;
           animation: ${progressAni3} 500ms 0s ease-in forwards;
-          /* width: ${`${props.percent}%`} !important; */
         }
       }
     `}
@@ -164,7 +159,6 @@ export const ProgressWrap = styled.div`
           content: "";
           transition: width 1s;
           animation: ${progressAni4} 500ms 0s ease-in forwards;
-          /* width: ${`${props.percent}%`} !important; */
         }
       }
     `}
@@ -177,7 +171,6 @@ export const ProgressWrap = styled.div`
           content: "";
           transition: width 1s;
           animation: ${progressAni5} 500ms 0s ease-in forwards;
-          /* width: ${`${props.percent}%`} !important; */
         }
       }
     `}
@@ -190,7 +183,6 @@ export const ProgressWrap = styled.div`
           content: "";
           transition: width 1s;
           animation: ${progressAni6} 500ms 0s ease-in forwards;
-          /* width: ${`${props.percent}%`} !important; */
         }
       }
     `}
@@ -203,7 +195,6 @@ export const ProgressWrap = styled.div`
           content: "";
           transition: width 1s;
           animation: ${progressAni7} 500ms 0s ease-in forwards;
-          /* width: ${`${props.percent}%`} !important; */
         }
       }
     `}
@@ -216,14 +207,12 @@ export const ProgressWrap = styled.div`
           content: "";
           transition: width 1s;
           animation: ${progressAni8} 500ms 0s ease-in forwards;
-          /* width: ${`${props.percent}%`} !important; */
         }
       }
     `}
   & > div {
     width: 100%;
     height: 4px;
-    /* Gray 20% */
 
     background: rgba(0, 0, 0, 0.2);
     border-radius: 28px;
@@ -235,16 +224,12 @@ export const ProgressWrap = styled.div`
       position: absolute;
       display: block;
       left: 0;
-      /* top: 0; */
       top: 50%;
       width: 0;
-      /* transition: width 1s; */
       transform: translateY(-50%);
       box-sizing: border-box;
       height: 5px;
 
-      /* width: ${props.prevPercent} */
-      /* width: 0; */
       background: #6100ff;
       border-radius: 28px;
     }

@@ -1310,7 +1310,7 @@ export const ClassDetailContainerWrap = styled.div`
               }
               & > path {
                 stroke: #fff;
-                stroke-opacity: 1;
+                strokeopacity: 1;
               }
             }
             & > div {

@@ -25,6 +25,7 @@ import { useSelector } from "react-redux";
 import CostPayPrepending from "../components/application/CostPayPrepending";
 import CostPayRealClassPrepending from "../components/application/CostPayRealClassPrepending";
 import CostPayRealContainer from "../components/application/CostPayRealContainer";
+import MainHeader from "../components/asset/MainHeader";
 const ApplicationContainer = () => {
   const param = useRouter();
   const [percent, setPercent] = useState(0);

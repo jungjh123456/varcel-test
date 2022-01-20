@@ -46,7 +46,7 @@ const StudyManagementContainer = () => {
         <div className="study_wrap">
           {realClassStudyManageMentList?.map((item) => {
             return (
-              <div onClick={goInfo} data-program="realClass" data-status={item.status} data-id={item.id} className="card">
+              <div key={i} onClick={goInfo} data-program="realClass" data-status={item.status} data-id={item.id} className="card">
                 <div data-status={item.status} data-program="realClass" data-id={item.id}>
                   <div data-status={item.status} data-program="realClass" data-id={item.id}>
                     <span data-status={item.status} data-program="realClass" data-id={item.id}>
@@ -81,7 +81,7 @@ const StudyManagementContainer = () => {
           })}
           {studyManageMentList?.map((item) => {
             return (
-              <div data-program="classDetail" onClick={goInfo} data-status={item.status} data-id={item.id} className="card">
+              <div key={i} data-program="classDetail" onClick={goInfo} data-status={item.status} data-id={item.id} className="card">
                 <div data-program="classDetail" data-status={item.status} data-id={item.id}>
                   <div data-program="classDetail" data-status={item.status} data-id={item.id}>
                     <span data-program="classDetail" data-status={item.status} data-id={item.id}>

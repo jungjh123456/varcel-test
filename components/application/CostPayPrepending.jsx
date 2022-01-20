@@ -29,7 +29,7 @@ const CostPayPrepending = () => {
     }
 
     sessionStorage.clear();
-    history.push(`/application/applied_costpay?${str}`);
+    history.push(`/application/9?${str}`);
   };
   const goSmoth = (e) => {
     if (e.target.value === "introduce") {

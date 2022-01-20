@@ -78,7 +78,7 @@ const StudyRealclass = () => {
                     <span>수업일정</span>
                     <div style={{ display: "flex", flexDirection: "column", fontSize: "0.875rem" }}>
                       {studyinfo?.sessionbatch_data?.weekly_visit_datetime?.map((item, i, arr) => {
-                        return <span>매주 {item}</span>;
+                        return <span key={i}>매주 {item}</span>;
 
                         // return <span>{arr[arr.length - 1] === item ? "" : "수업일정"}</span>;
                       })}
@@ -100,7 +100,7 @@ const StudyRealclass = () => {
               {/* results */}
               {studyinfo?.sessionbatch_data?.results?.map((item) => {
                 return (
-                  <div data-id={item.id} data-status={item.status} onClick={infoGoBtn} className="card">
+                  <div key={i} data-id={item.id} data-status={item.status} onClick={infoGoBtn} className="card">
                     <div data-id={item.id} data-status={item.status}>
                       <span data-id={item.id} data-status={item.status}>
                         {item.session_round}회차

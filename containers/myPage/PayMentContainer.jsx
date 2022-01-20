@@ -41,7 +41,7 @@ const PayMentContainer = () => {
         <div className="applied_wrap">
           {paymentList?.map((item) => {
             return (
-              <div data-program={item.type === "체험권" ? "presession" : "session"} onClick={goInfo} data-id={item.id} data-status={item.status} className="card1">
+              <div key={i} data-program={item.type === "체험권" ? "presession" : "session"} onClick={goInfo} data-id={item.id} data-status={item.status} className="card1">
                 <div data-program={item.type === "체험권" ? "presession" : "session"} data-id={item.id} data-status={item.status}>
                   <span data-program={item.type === "체험권" ? "presession" : "session"} data-id={item.id} data-status={item.status}>
                     {item.product} ({item.type})

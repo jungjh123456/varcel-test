@@ -191,7 +191,7 @@ const DetailInfo = () => {
             <div className="visit_list-wrap">
               {profileInfo?.expectations?.map((item) => {
                 return (
-                  <div className="visit_list">
+                  <div key={i} className="visit_list">
                     <CheckIcons />
                     <span>{item}</span>
                   </div>

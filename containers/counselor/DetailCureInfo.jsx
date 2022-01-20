@@ -56,7 +56,7 @@ const DetailCureInfo = () => {
                   <span>수업일정</span>
                   <div style={{ display: "flex", flexDirection: "column", fontSize: "0.875rem" }}>
                     {profileInfo?.weekly_visit_datetime?.map((item, i, arr) => {
-                      return <span>{item}</span>;
+                      return <span key={i}>{item}</span>;
 
                       // return <span>{arr[arr.length - 1] === item ? "" : "수업일정"}</span>;
                     })}
@@ -205,7 +205,7 @@ const DetailCureInfo = () => {
             <div className="visit_list-wrap">
               {profileInfo?.expectations?.map((item) => {
                 return (
-                  <div className="visit_list">
+                  <div key={i} className="visit_list">
                     <CheckIcons />
                     <span>{item}</span>
                   </div>

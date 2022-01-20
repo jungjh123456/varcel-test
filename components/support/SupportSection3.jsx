@@ -57,7 +57,7 @@ const SupportSection3 = () => {
         {list.map((item, i, arr) => {
           if (i === num) {
             return (
-              <div className="list_wrap">
+              <div key={i} className="list_wrap">
                 <div className="emoticon">
                   <svg width="29" height="25" viewBox="0 0 29 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clipPath="url(#clip0_242_2193)">

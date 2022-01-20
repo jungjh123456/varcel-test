@@ -78,7 +78,7 @@ const ComunitySection2 = () => {
               {" "}
               {list.map((item) => {
                 return (
-                  <div onClick={goInfoCard} data-id={item.id} data-program="baldal" className="card">
+                  <div key={i} onClick={goInfoCard} data-id={item.id} data-program="baldal" className="card">
                     <div data-id={item.id} data-program="baldal" className="img-wrap">
                       <img data-id={item.id} data-program="baldal" src="/imgs/testChirdren.png" alt="me" />
                     </div>
@@ -102,7 +102,7 @@ const ComunitySection2 = () => {
               {" "}
               {list.map((item) => {
                 return (
-                  <div onClick={goInfoCard} data-id={item.id} data-program="review" className="card">
+                  <div key={i} onClick={goInfoCard} data-id={item.id} data-program="review" className="card">
                     <div data-id={item.id} data-program="review" className="img-wrap">
                       <img data-id={item.id} data-program="review" src="/imgs/testChirdren.png" alt="me" />
                     </div>
@@ -126,7 +126,7 @@ const ComunitySection2 = () => {
               {" "}
               {list.map((item) => {
                 return (
-                  <div onClick={goInfoCard} data-id={item.id} data-program="interview" className="card">
+                  <div key={i} onClick={goInfoCard} data-id={item.id} data-program="interview" className="card">
                     <div data-id={item.id} data-program="interview" className="img-wrap">
                       <img data-id={item.id} data-program="interview" src="/imgs/testChirdren.png" alt="me" />
                     </div>
@@ -150,7 +150,7 @@ const ComunitySection2 = () => {
               {" "}
               {list.map((item) => {
                 return (
-                  <div onClick={goInfoCard} data-id={item.id} data-program="etc" className="card">
+                  <div key={i} onClick={goInfoCard} data-id={item.id} data-program="etc" className="card">
                     <div data-id={item.id} data-program="etc" className="img-wrap">
                       <img data-id={item.id} data-program="etc" src="/imgs/testChirdren.png" alt="me" />
                     </div>

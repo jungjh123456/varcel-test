@@ -47,7 +47,7 @@ const ReviewContainer = () => {
         <div className="study_wrap">
           {reviewList?.sessionbatch_list?.map((item) => {
             return (
-              <div data-program="sessions" onClick={goInfo} data-status={item.content ? true : false} data-id={item.id} className="card">
+              <div key={i} data-program="sessions" onClick={goInfo} data-status={item.content ? true : false} data-id={item.id} className="card">
                 <div data-program="sessions" data-status={item.content ? true : false} data-id={item.id}>
                   <div data-program="sessions" data-status={item.content ? true : false} data-id={item.id}>
                     <span data-program="sessions" data-status={item.content ? true : false} data-id={item.id}>
@@ -72,7 +72,7 @@ const ReviewContainer = () => {
           })}
           {reviewList?.presession_list?.map((item) => {
             return (
-              <div data-program="presessions" onClick={goInfo} data-status={item.content ? true : false} data-id={item.id} className="card">
+              <div key={i} data-program="presessions" onClick={goInfo} data-status={item.content ? true : false} data-id={item.id} className="card">
                 <div data-program="presessions" data-status={item.content ? true : false} data-id={item.id}>
                   <div data-program="presessions" data-status={item.content ? true : false} data-id={item.id}>
                     <span data-program="presessions" data-status={item.content ? true : false} data-id={item.id}>

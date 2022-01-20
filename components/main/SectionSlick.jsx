@@ -96,7 +96,7 @@ const SectionSlick = () => {
       >
         {[1, 2, 3].map((item) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={i}>
               <div>
                 <div>
                   <img src="/imgs/testChirdren.png" layout="responsive" alt="me" width="320" height="226" />

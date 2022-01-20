@@ -22,7 +22,7 @@ const UserManagementContainer = () => {
             { id: 35, user: "김소연", text: "언어발달 자극 프로그램 (체험권)", counselor: "강명실", date: new Date(), status: "진행중", quota: 6, max_quota: 24 },
           ]?.map((item) => {
             return (
-              <div data-status={item.status} data-id={item.id} className="card">
+              <div key={i} data-status={item.status} data-id={item.id} className="card">
                 <div data-status={item.status} data-id={item.id}>
                   <div data-status={item.status} data-id={item.id}>
                     <span data-status={item.status} data-id={item.id}>

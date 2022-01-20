@@ -14,7 +14,7 @@ const Dropdown = (props) => {
         <div>
           {props?.list?.map((item, i) => {
             return (
-              <label htmlFor={props?.id} key={i} onClick={props.onClick} data-name={props.name} name={props?.name} data-set={item.label} data-num={item?.num}>
+              <label key={i} htmlFor={props?.id} onClick={props.onClick} data-name={props.name} name={props?.name} data-set={item.label} data-num={item?.num}>
                 {item.label}
               </label>
             );
