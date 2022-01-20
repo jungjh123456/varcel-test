@@ -1,12 +1,3 @@
-import React from 'react';
-
-const CostPayRealClassContainer = () => {
-    return (
-        <div>
-            
-        </div>
-    );
-};
 import React, { useState } from "react";
 import { useEffect } from "react";
 import BigButton from "../asset/BigButton";
@@ -29,14 +20,13 @@ const CostPayRealClassContainer = () => {
   }, []);
   const payBtn = () => {
     const customer_id = `${uuid()}`;
- 
+
     toss.requestBillingAuth("카드", {
       customerKey: customer_id,
       successUrl: "http://localhost:3000/application/8?id=35",
       failUrl: "http://localhost:3000/fail",
     });
   };
-
 
   // 모두 체크
   const [allCheckState, setAllCheckState] = useState({ chk1: false, chk2: false });
@@ -173,7 +163,5 @@ const CostPayRealClassContainer = () => {
     </CostPayContainerWrap>
   );
 };
-
-export default CostPayRealClassContainer;
 
 export default CostPayRealClassContainer;

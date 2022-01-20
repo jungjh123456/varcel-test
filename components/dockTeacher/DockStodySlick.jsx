@@ -175,8 +175,4 @@ const DockStodySlick = () => {
   );
 };
 
-export default () => (
-  <div>
-    <DockStodySlick />
-  </div>
-);
+export default DockStodySlick;
